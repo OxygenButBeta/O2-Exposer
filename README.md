@@ -36,69 +36,40 @@ Download the latest release from the [Releases](https://github.com/OxygenButBeta
 
 Extract the package and add the DLL file (`O2.Exposer.dll`) to your project references manually
 
-## 📌 Sample Usage
+## 📌 Sample Usage & 🚀 Quick Start
+
+# Using ExposedGroup<T> (Recommended for Accessing Multiple Members)
 
 ```csharp
-using System.Runtime.CompilerServices;
-using O2.Exposer;
-
-// Create an instance of the class to be exposed
-// You can inspect the class definition to see which members are accessible in the bottom of the file
-SomeExternalClass externalInstance = new();
-
-// ------------------------------------
-// Using ExposedGroup<T> (recommended for accessing multiple members)
-// ------------------------------------
-
-// Expose all accessible members without filtering
 ExposedGroup<SomeExternalClass> exposedGroup = new(externalInstance);
-
-// Optionally, configure filters to control which members are exposed
+```
+# Configure Optional Filters to Control Which Members Are Exposed
+```csharp
 ExposerFilter exposerFilter = new ExposerFilter {
     GetterRequired = true,
     SetterRequired = true,
-    RequiredAttributes = new[] {
+    RequiredAttributes = [
         typeof(PreserveBaseOverridesAttribute),
         typeof(CompilerGeneratedAttribute)
         // Add any other required attributes here
-    },
+    ],
     AccessModifiers = AccessModifierTarget.Public | AccessModifierTarget.Protected | AccessModifierTarget.Internal
 };
-
-// Create an exposed group with filters
+```
+# Create an Exposed Group with Filters
+```csharp
 ExposedGroup<SomeExternalClass> filteredGroup = new ExposedGroup<SomeExternalClass>(externalInstance, exposerFilter);
-
-// Retrieve a member by name and expected type
-ExposedMember<string> fieldExposed = exposedGroup.GetMember<string>("fieldName");
-
-// Convert exposed member into interfaces with restricted access
-IGetterOnlyMember<string> readOnly = fieldExposed.AsReadOnly();
-ISetterOnlyMember<string> writeOnly = fieldExposed.AsSetOnly();
-
-// ------------------------------------
-// Using ExposedMember<T> directly
-// ------------------------------------
-
-// Expose a property or field by name without filters
-ExposedMember<int> intField = ExposedMember<int>.Expose("GetIntField", externalInstance);
-
-// You can access and modify the value using the Value property
-intField.Value++;
-Console.WriteLine("Incremented field value: " + intField.Value);
-
-// Sample class we want to expose members of
-class SomeExternalClass {
-    // Private field (non-public)
-    string fieldName = "Initial Value";
-
-    // Public auto-property with both getter and setter
-    public int GetIntField { get; set; }
-
-    // Read-only property
-    public bool GetOnlyProperty { get; } = true;
-
-    // Write-only property
-    public float SetOnlyProperty {
-        set => Console.WriteLine("SetOnlyProperty called with value: " + value);
-    }
-}
+```
+# Retrieve a Member by Name and Expected Type
+```csharp
+ExposedMember<string, SomeExternalClass> fieldExposed = exposedGroup.GetMember<string>("fieldName");
+```
+# Convert Exposed Member into Interfaces with Restricted Access
+```csharp
+IGetterOnlyMember<string, SomeExternalClass> readOnly = fieldExposed.AsReadOnly();
+ISetterOnlyMember<string, SomeExternalClass> writeOnly = fieldExposed.AsSetOnly();
+```
+# Expose a Property or Field by Name Without Filters
+```csharp
+ExposedMember<int, SomeExternalClass> intField = ExposedMember<int, SomeExternalClass>.Expose("GetIntField", externalInstance);
+```
