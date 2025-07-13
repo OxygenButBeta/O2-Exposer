@@ -1,4 +1,4 @@
-# O2.Exposer
+# O2 Exposer
 
 `O2 Exposer` is a lightweight, high-performance member access library that enables fast runtime access to fields and properties of any object — without the overhead of slow reflection calls.
 
