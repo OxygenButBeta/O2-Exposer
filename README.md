@@ -11,17 +11,31 @@ It also offers advanced filtering capabilities, allowing you to expose members b
 
 ---
 
-## Key Features
--🔍 Access by Name: Access private and public fields and properties via string names.
--⚡ High Performance: Reflection is only used once per member type. Afterwards, access is done through compiled delegates, completely reflection-free and with zero GC allocations.
--🧠 Smart Caching: Caches types, members, and delegates for maximum runtime performance.
--🧹 GC-Free Access: No boxing or allocations during get/set operations — ideal for performance-critical applications.
--🎯 Flexible Filtering: Filter exposed members by:
-Access level (private, public, etc.)
-Attributes (e.g. [SerializeField])
-Accessibility (read/write)
-🧩 Clean Value Access: Get/set directly via .Value, with full type safety.
-🛡 Interface-Based Control: Restrict access via IExposedGetOnly<T> or IExposedSetOnly<T> interfaces.
+## 🔑 Key Features
+
+- 🔍 **Access by Name**  
+  Access private and public fields and properties via string names.
+
+- ⚡ **High Performance**  
+  Reflection is only used **once per member type**. Afterwards, access is done through **compiled delegates**, completely **reflection-free** and with **zero GC allocations**.
+
+- 🧠 **Smart Caching**  
+  Caches types, members, and delegates for maximum runtime performance.
+
+- 🧹 **GC-Free Access**  
+  No boxing or allocations during get/set operations — ideal for performance-critical applications.
+
+- 🎯 **Flexible Filtering**  
+  Filter exposed members by:
+  - Access level (`private`, `public`, etc.)
+  - Attributes (e.g. `[SerializeField]`)
+  - Accessibility (`read`, `write`)
+
+- 🧩 **Clean Value Access**  
+  Get/set directly via `.Value`, with full type safety.
+
+- 🛡 **Interface-Based Control**  
+  Restrict access via `IExposedGetOnly<T>` or `IExposedSetOnly<T>` interfaces.
 
 ## 🔢 Benchmark Comparison
 
