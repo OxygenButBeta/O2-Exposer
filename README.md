@@ -20,14 +20,14 @@ It also offers advanced filtering capabilities, allowing you to expose members b
 - Interface-based restricted access (get-only, set-only)
 - Type and delegate caching for maximum performance
 
-## 🔢 Performance Results
+## 🔢 Benchmark Comparison
 
-| Comparison                 | Reflection (ns) | Exposed (ns) | Performance Improvement (%) |
-|----------------------------|-----------------|--------------|-----------------------------|
-| FieldInfo Get vs Exposed Get       | 2,553.6         | 0,255.1        | 90.01% faster       |
-| FieldInfo Set vs Exposed Set       | 5,338.3         | 1,263.2      | 76.34% faster       |
-| PropertyInfo Set vs Exposed Set    | 10,139.9        | 1,240.6      | 87.76% faster       |        
-| PropertyInfo Get vs Exposed Get    | 6,945.5         | 1,057.8      | 84.77% faster       |
+| Pair                        | Faster Method                 | Slower Method              | Faster Mean (ns) | Slower Mean (ns) | x Difference | % Slower   |
+|-----------------------------|-------------------------------|----------------------------|------------------|------------------|--------------|------------|
+| Field Get                   | ExposedMemberGet              | FieldInfoGet               | 0.2551           | 2.5536           | ~10.0×       | ~901%      |
+| Field Set                   | ExposedMemberSet              | FieldInfoSet               | 1.2632           | 5.3383           | ~4.2×        | ~322%      |
+| Property Set                | ExposedMemberPropertySet      | PropertyInfoSet            | 1.2406           | 10.1399          | ~8.2×        | ~717%      |
+| Property Get                | ExposedMemberPropertyGet      | PropertyInfoGet            | 1.0578           | 6.9455           | ~6.6×        | ~557%      |
 
 ## 📦 Installation
 
