@@ -24,7 +24,7 @@ It also offers advanced filtering capabilities, allowing you to expose members b
 
 | Comparison                 | Reflection (ns) | Exposed (ns) | Performance Improvement (%) |
 |----------------------------|-----------------|--------------|-----------------------------|
-| FieldInfo Get vs Exposed Get       | 2,553.6         | 255.1        | 90.01% faster       |
+| FieldInfo Get vs Exposed Get       | 2,553.6         | 0,255.1        | 90.01% faster       |
 | FieldInfo Set vs Exposed Set       | 5,338.3         | 1,263.2      | 76.34% faster       |
 | PropertyInfo Set vs Exposed Set    | 10,139.9        | 1,240.6      | 87.76% faster       |        
 | PropertyInfo Get vs Exposed Get    | 6,945.5         | 1,057.8      | 84.77% faster       |
