@@ -38,7 +38,7 @@ Extract the package and add the DLL file (`O2.Exposer.dll`) to your project refe
 
 ## 📌 Sample Usage & 🚀 Quick Start
 
-# Using ExposedGroup<T> (Recommended for Accessing Multiple Members)
+### Using ExposedGroup<T> (Recommended for Accessing Multiple Members)
 
 ```csharp
 ExposedGroup<SomeExternalClass> exposedGroup = new(externalInstance);
