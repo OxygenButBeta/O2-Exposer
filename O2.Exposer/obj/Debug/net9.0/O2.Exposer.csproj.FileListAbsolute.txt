@@ -1,0 +1,12 @@
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\bin\Debug\net9.0\O2.Exposer.deps.json
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\bin\Debug\net9.0\O2.Exposer.dll
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\bin\Debug\net9.0\O2.Exposer.pdb
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\obj\Debug\net9.0\O2.Exposer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\obj\Debug\net9.0\O2.Exposer.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\obj\Debug\net9.0\O2.Exposer.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\obj\Debug\net9.0\O2.Exposer.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\obj\Debug\net9.0\O2.Exposer.sourcelink.json
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\obj\Debug\net9.0\O2.Exposer.dll
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\obj\Debug\net9.0\refint\O2.Exposer.dll
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\obj\Debug\net9.0\O2.Exposer.pdb
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\O2.Exposer\obj\Debug\net9.0\ref\O2.Exposer.dll

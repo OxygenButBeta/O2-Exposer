@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2.Exposer", "O2.Exposer\O2.Exposer.csproj", "{A240954A-5569-488F-A889-1ACF6F83EEC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2.Exposer.Benchmark", "O2.Exposer.Benchmark\O2.Exposer.Benchmark.csproj", "{7A4B85ED-71CE-4EF6-9028-3FDDBAE96780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2.Exposer.Samples", "O2.Exposer.Samples\O2.Exposer.Samples.csproj", "{ACE9FDD8-7DD0-4180-ABCE-8591DA0E9904}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A240954A-5569-488F-A889-1ACF6F83EEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A240954A-5569-488F-A889-1ACF6F83EEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A240954A-5569-488F-A889-1ACF6F83EEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A240954A-5569-488F-A889-1ACF6F83EEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4B85ED-71CE-4EF6-9028-3FDDBAE96780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4B85ED-71CE-4EF6-9028-3FDDBAE96780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4B85ED-71CE-4EF6-9028-3FDDBAE96780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4B85ED-71CE-4EF6-9028-3FDDBAE96780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE9FDD8-7DD0-4180-ABCE-8591DA0E9904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE9FDD8-7DD0-4180-ABCE-8591DA0E9904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE9FDD8-7DD0-4180-ABCE-8591DA0E9904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE9FDD8-7DD0-4180-ABCE-8591DA0E9904}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
