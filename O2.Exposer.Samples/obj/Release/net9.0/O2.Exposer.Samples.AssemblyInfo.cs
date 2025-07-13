@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("O2.Exposer.Samples")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1737384dec749d990e5247824ac31894b47ae69a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+352ac0cab25e29caeed2b0d2dfb8b7257ce12af6")]
 [assembly: System.Reflection.AssemblyProductAttribute("O2.Exposer.Samples")]
 [assembly: System.Reflection.AssemblyTitleAttribute("O2.Exposer.Samples")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
