@@ -1,6 +1,6 @@
 # O2.Exposer
 
-`O2.Exposer` is a lightweight, high-performance member access library that enables fast runtime access to fields and properties of any object — without the overhead of slow reflection calls.
+`O2 Exposer` is a lightweight, high-performance member access library that enables fast runtime access to fields and properties of any object — without the overhead of slow reflection calls.
 
 Traditional reflection in .NET can be slow and impact application performance, especially when accessing members repeatedly. `O2.Exposer` solves this by generating and caching delegate-based getters and setters for each member, ensuring:
 
