@@ -41,7 +41,7 @@ Extract the package and add the DLL file (`O2.Exposer.dll`) to your project refe
 ### Using ExposedGroup<T> (Recommended for Accessing Multiple Members)
 
 ```csharp
-ExposedGroup<TargetType> exposedGroup = new(externalInstance);
+ExposedGroup<TargetType> exposedGroup = new(TargetInstance);
 ```
 ### Configure Optional Filters to Control Which Members Are Exposed
 ```csharp
@@ -58,7 +58,7 @@ ExposerFilter exposerFilter = new ExposerFilter {
 ```
 ### Create an Exposed Group with Filters
 ```csharp
-ExposedGroup<TargetType> filteredGroup = new ExposedGroup<TargetType>(externalInstance, exposerFilter);
+ExposedGroup<TargetType> filteredGroup = new ExposedGroup<TargetType>(TargetInstance, exposerFilter);
 ```
 ### Retrieve a Member by Name and Expected Type
 ```csharp
@@ -71,5 +71,5 @@ ISetterOnlyMember<string, TargetType> writeOnly = fieldExposed.AsSetOnly();
 ```
 ### Expose a Property or Field by Name Without Filters
 ```csharp
-ExposedMember<int, TargetType> intField = ExposedMember<int, TargetType>.Expose("GetIntField", externalInstance);
+ExposedMember<int, TargetType> intField = ExposedMember<int, TargetType>.Expose("GetIntField", TargetInstance);
 ```
