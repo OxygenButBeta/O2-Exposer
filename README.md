@@ -29,14 +29,11 @@ It also offers advanced filtering capabilities, allowing you to expose members b
 | PropertyInfo Set vs Exposed Set    | 10,139.9        | 1,240.6      | 87.76% faster       |        
 | PropertyInfo Get vs Exposed Get    | 6,945.5         | 1,057.8      | 84.77% faster       |
 
-### ✅ Summary
+## 📦 Installation
 
-| Operation     | ExposedMember Performance Gain (%) |
-|---------------|------------------------------------|
-| Field Get     | 90.01%                             |
-| Field Set     | 76.34%                             |
-| Property Set  | 87.76%                             |
-| Property Get  | 84.77%                             |
+Download the latest release from the [Releases](https://github.com/OxygenButBeta/O2.Exposer/releases) page.
+
+Extract the package and add the DLL file (`O2.Exposer.dll`) to your project references manually
 
 ## 📌 Sample Usage
 
