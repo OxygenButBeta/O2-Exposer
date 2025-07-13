@@ -41,7 +41,7 @@ Extract the package and add the DLL file (`O2.Exposer.dll`) to your project refe
 ### Using ExposedGroup<T> (Recommended for Accessing Multiple Members)
 
 ```csharp
-ExposedGroup<SomeExternalClass> exposedGroup = new(externalInstance);
+ExposedGroup<TargetType> exposedGroup = new(externalInstance);
 ```
 ### Configure Optional Filters to Control Which Members Are Exposed
 ```csharp
@@ -58,18 +58,18 @@ ExposerFilter exposerFilter = new ExposerFilter {
 ```
 ### Create an Exposed Group with Filters
 ```csharp
-ExposedGroup<SomeExternalClass> filteredGroup = new ExposedGroup<SomeExternalClass>(externalInstance, exposerFilter);
+ExposedGroup<TargetType> filteredGroup = new ExposedGroup<TargetType>(externalInstance, exposerFilter);
 ```
 ### Retrieve a Member by Name and Expected Type
 ```csharp
-ExposedMember<string, SomeExternalClass> fieldExposed = exposedGroup.GetMember<string>("fieldName");
+ExposedMember<string, TargetType> fieldExposed = exposedGroup.GetMember<string>("fieldName");
 ```
 ### Convert Exposed Member into Interfaces with Restricted Access
 ```csharp
-IGetterOnlyMember<string, SomeExternalClass> readOnly = fieldExposed.AsReadOnly();
-ISetterOnlyMember<string, SomeExternalClass> writeOnly = fieldExposed.AsSetOnly();
+IGetterOnlyMember<string, TargetType> readOnly = fieldExposed.AsReadOnly();
+ISetterOnlyMember<string, TargetType> writeOnly = fieldExposed.AsSetOnly();
 ```
 ### Expose a Property or Field by Name Without Filters
 ```csharp
-ExposedMember<int, SomeExternalClass> intField = ExposedMember<int, SomeExternalClass>.Expose("GetIntField", externalInstance);
+ExposedMember<int, TargetType> intField = ExposedMember<int, TargetType>.Expose("GetIntField", externalInstance);
 ```
