@@ -1,0 +1,12 @@
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\bin\Debug\net9.0\EXPO.deps.json
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\bin\Debug\net9.0\EXPO.dll
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\bin\Debug\net9.0\EXPO.pdb
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\obj\Debug\net9.0\EXPO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\obj\Debug\net9.0\EXPO.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\obj\Debug\net9.0\EXPO.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\obj\Debug\net9.0\EXPO.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\obj\Debug\net9.0\EXPO.sourcelink.json
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\obj\Debug\net9.0\EXPO.dll
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\obj\Debug\net9.0\refint\EXPO.dll
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\obj\Debug\net9.0\EXPO.pdb
+C:\Users\suley\OneDrive\Documents\GitHub\EXPO\EXPO\obj\Debug\net9.0\ref\EXPO.dll
