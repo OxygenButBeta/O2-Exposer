@@ -22,12 +22,13 @@ It also offers advanced filtering capabilities, allowing you to expose members b
 
 ## 🔢 Benchmark Comparison
 
-| Pair                        | Faster Method                 | Slower Method              | Faster Mean (ns) | Slower Mean (ns) | x Difference | Performance gain   |
-|-----------------------------|-------------------------------|----------------------------|------------------|------------------|--------------|------------|
-| Field Get                   | ExposedMemberGet              | FieldInfoGet               | 0.2551           | 2.5536           | ~10.0×       | ~901%      |
-| Field Set                   | ExposedMemberSet              | FieldInfoSet               | 1.2632           | 5.3383           | ~4.2×        | ~322%      |
-| Property Set                | ExposedMemberPropertySet      | PropertyInfoSet            | 1.2406           | 10.1399          | ~8.2×        | ~717%      |
-| Property Get                | ExposedMemberPropertyGet      | PropertyInfoGet            | 1.0578           | 6.9455           | ~6.6×        | ~557%      |
+| Operation    | Faster Method              | Slower Method     | Faster Mean (ns) | Slower Mean (ns) |    × Faster |   Performance Gain |
+| ------------ | -------------------------- | ----------------- | ---------------: | ---------------: | ----------: | -----------------: |
+| Field Get    | `ExposedMemberGet`         | `FieldInfoGet`    |        0.2045 ns |        2.3544 ns | **\~11.5×** | **\~1051% faster** |
+| Field Set    | `ExposedMemberSet`         | `FieldInfoSet`    |        1.0329 ns |        5.2493 ns |  **\~5.1×** |  **\~408% faster** |
+| Property Get | `ExposedMemberPropertyGet` | `PropertyInfoGet` |        0.8029 ns |        6.7075 ns |  **\~8.4×** |  **\~736% faster** |
+| Property Set | `ExposedMemberPropertySet` | `PropertyInfoSet` |        1.0093 ns |        9.9785 ns |  **\~9.9×** |  **\~889% faster** |
+
 
 ## 📦 Installation
 
