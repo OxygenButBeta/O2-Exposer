@@ -43,7 +43,7 @@ Extract the package and add the DLL file (`O2.Exposer.dll`) to your project refe
 ```csharp
 ExposedGroup<SomeExternalClass> exposedGroup = new(externalInstance);
 ```
-# Configure Optional Filters to Control Which Members Are Exposed
+### Configure Optional Filters to Control Which Members Are Exposed
 ```csharp
 ExposerFilter exposerFilter = new ExposerFilter {
     GetterRequired = true,
@@ -56,20 +56,20 @@ ExposerFilter exposerFilter = new ExposerFilter {
     AccessModifiers = AccessModifierTarget.Public | AccessModifierTarget.Protected | AccessModifierTarget.Internal
 };
 ```
-# Create an Exposed Group with Filters
+### Create an Exposed Group with Filters
 ```csharp
 ExposedGroup<SomeExternalClass> filteredGroup = new ExposedGroup<SomeExternalClass>(externalInstance, exposerFilter);
 ```
-# Retrieve a Member by Name and Expected Type
+### Retrieve a Member by Name and Expected Type
 ```csharp
 ExposedMember<string, SomeExternalClass> fieldExposed = exposedGroup.GetMember<string>("fieldName");
 ```
-# Convert Exposed Member into Interfaces with Restricted Access
+### Convert Exposed Member into Interfaces with Restricted Access
 ```csharp
 IGetterOnlyMember<string, SomeExternalClass> readOnly = fieldExposed.AsReadOnly();
 ISetterOnlyMember<string, SomeExternalClass> writeOnly = fieldExposed.AsSetOnly();
 ```
-# Expose a Property or Field by Name Without Filters
+### Expose a Property or Field by Name Without Filters
 ```csharp
 ExposedMember<int, SomeExternalClass> intField = ExposedMember<int, SomeExternalClass>.Expose("GetIntField", externalInstance);
 ```
