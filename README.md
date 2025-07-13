@@ -22,7 +22,7 @@ It also offers advanced filtering capabilities, allowing you to expose members b
 
 ## 🔢 Benchmark Comparison
 
-| Pair                        | Faster Method                 | Slower Method              | Faster Mean (ns) | Slower Mean (ns) | x Difference | % Performance gain   |
+| Pair                        | Faster Method                 | Slower Method              | Faster Mean (ns) | Slower Mean (ns) | x Difference | Performance gain   |
 |-----------------------------|-------------------------------|----------------------------|------------------|------------------|--------------|------------|
 | Field Get                   | ExposedMemberGet              | FieldInfoGet               | 0.2551           | 2.5536           | ~10.0×       | ~901%      |
 | Field Set                   | ExposedMemberSet              | FieldInfoSet               | 1.2632           | 5.3383           | ~4.2×        | ~322%      |
